@@ -46,6 +46,7 @@ def contractDiff():
 
         """第二步"""
         if st.session_state["steps"] == "step 2":
+            st.session_state["steps"] = "step 2"
             with st.form("关键字选取"):
                 st.subheader("关键字选取")
                 sac.transfer(items=[f'item{i}' for i in range(30)], index=[0, 1],
@@ -62,6 +63,7 @@ def contractDiff():
 
         """第三步"""
         if st.session_state["steps"] == "step 3":
+            st.session_state["steps"] = "step 3"
             # 初始化数据
             if 'data' not in st.session_state:
                 st.session_state.data = []
@@ -93,6 +95,7 @@ def contractDiff():
                     st.session_state["steps"] = "step 4"
         """第三步"""
         if st.session_state["steps"] == "step 4":
+            st.session_state["steps"] = "step 4"
             col4 = st.columns([2, 2, 1])
 
             with col4[1]:
@@ -102,8 +105,6 @@ def contractDiff():
             with col4_[9]:
                 if st.button("开始测试", key="btn4", type="primary"):
                     pass
-
-
 
     """导航栏"""
     with step_ph.container():
