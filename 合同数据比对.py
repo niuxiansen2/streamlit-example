@@ -19,19 +19,19 @@ def contractDiff():
                 for _ in range(2):
                     st.write(" ")
                 sac.alert(label='⚠️**注意**',
-                          description='目前仅支持单文件上传，且上传的原始数据文件仅支持.docx，被测文件支持.pdf/.docx/图片等格式',
+                          description='目前「标准文件上传」仅支持单文件上传，且上传的原始数据文件仅支持.docx；「多模态文件上传」支持多个文件同时上传，支持.pdf/.docx/图片等格式',
                           size='sm', radius=20, color='dark', banner=[False, True])
 
                 col1 = st.columns(2, gap='large')
                 with col1[0]:
                     with st.form("文件上传"):
-                        st.file_uploader("上传原始数据文件")
+                        st.file_uploader("标准文件上传")
                         st.form_submit_button("⇲", disabled=True)
 
                 with col1[1]:
                     with st.form("测试文件上传"):
-                        st.file_uploader("上传被测文件",accept_multiple_files=True)
-                        st.form_submit_button("⇲", disabled=True,)
+                        st.file_uploader("多模态文件上传（支持上传多个文件）", accept_multiple_files=True)
+                        st.form_submit_button("⇲", disabled=True, )
 
             col1_1 = st.columns(7)
             with col1_1[0]:
@@ -58,7 +58,7 @@ def contractDiff():
                 if st.button("下一步", key="btn2", type="primary"):
                     st.session_state["steps"] = "step 3"
             with col2[9]:
-                if st.button("上一步",key="btn2_" ,type="primary"):
+                if st.button("上一步", key="btn2_", type="primary"):
                     st.session_state["steps"] = "step 1"
 
         """第三步"""
