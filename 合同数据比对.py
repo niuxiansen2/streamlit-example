@@ -100,7 +100,7 @@ def contractDiff():
                 st.write(":red[关键字：]item1、item2、item3")
             col4_ = st.columns(11)
             with col4_[9]:
-                if st.button("开始测试", key="btn3", type="primary"):
+                if st.button("开始测试", key="btn4", type="primary"):
                     pass
 
 
