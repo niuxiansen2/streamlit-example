@@ -28,7 +28,7 @@ with st.sidebar:
         st.write(" ")
     sac.switch(label='dark_modelight_mode', size='md', key="theme")
 
-if st.session_state["menu"] == "合同数据":
+if st.session_state["menu"] == "贷款业务":
     contractDiff()
 
 if st.session_state["menu"] == "调查报告":
