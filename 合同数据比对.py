@@ -4,7 +4,7 @@ import pandas as pd
 
 
 def contractDiff():
-    st.subheader(":red[多模态文件信息比对测试] > 合同数据")
+    st.subheader(":red[多模态文件信息比对测试] > 合同数据 > 贷款业务")
     step_ph, btn_ph = st.empty(), st.empty()
     if 'steps' not in st.session_state:
         st.session_state['steps'] = "step 1"
