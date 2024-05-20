@@ -96,7 +96,12 @@ def contractDiff():
             col4 = st.columns([1, 2, 1])
 
             with col4[1]:
-                st.write(":red[原始数据文件：]test合同.docx")
+                st.write(":red[被测文件：]test合同.docx")
+                st.write(":red[关键字：]item1、item2、item3")
+            col4_ = st.columns(11)
+            with col4_[9]:
+                if st.button("开始测试", key="btn3", type="primary"):
+                    pass
 
 
 
