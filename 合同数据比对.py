@@ -91,6 +91,10 @@ def contractDiff():
             with col3_[9]:
                 if st.button("下一步", key="btn3", type="primary"):
                     st.session_state["steps"] = "step 4"
+        """第三步"""
+        if st.session_state["steps"] == "step 4":
+            st.write(":red[被测文件：]test合同.docx")
+
 
     """导航栏"""
     with step_ph.container():
