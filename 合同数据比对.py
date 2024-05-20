@@ -93,7 +93,7 @@ def contractDiff():
                     st.session_state["steps"] = "step 4"
         """第三步"""
         if st.session_state["steps"] == "step 4":
-            col4 = st.columns([1, 2, 1])
+            col4 = st.columns([2, 2, 1])
 
             with col4[1]:
                 st.write(":red[被测文件：]test合同.docx")
