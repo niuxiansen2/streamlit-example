@@ -30,8 +30,8 @@ def contractDiff():
 
                 with col1[1]:
                     with st.form("测试文件上传"):
-                        st.file_uploader("上传被测文件")
-                        st.form_submit_button("⇲", disabled=True)
+                        st.file_uploader("上传被测文件",accept_multiple_files=True)
+                        st.form_submit_button("⇲", disabled=True,)
 
             col1_1 = st.columns(7)
             with col1_1[0]:
@@ -58,7 +58,7 @@ def contractDiff():
                 if st.button("下一步", key="btn2", type="primary"):
                     st.session_state["steps"] = "step 3"
             with col2[9]:
-                if st.button("上一步", type="primary"):
+                if st.button("上一步",key="btn2_" ,type="primary"):
                     st.session_state["steps"] = "step 1"
 
         """第三步"""
