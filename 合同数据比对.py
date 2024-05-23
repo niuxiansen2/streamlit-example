@@ -13,7 +13,7 @@ def contractDiff():
     with btn_ph.container():
         """第一步"""
         if st.session_state["steps"] == "step 1":
-            for _ in range(5):
+            for _ in range(3):
                 st.write(" ")
             with st.container(height=400):
                 for _ in range(2):
