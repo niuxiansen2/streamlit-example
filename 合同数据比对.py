@@ -16,7 +16,7 @@ def contractDiff():
             for _ in range(3):
                 st.write(" ")
             with st.container(height=400):
-                for _ in range(2):
+                for _ in range(5):
                     st.write(" ")
                 sac.alert(label='⚠️**注意**',
                           description='目前「标准文件上传」仅支持单文件上传，且上传的原始数据文件仅支持.docx；「多模态文件上传」支持多个文件同时上传，支持.pdf/.docx/图片等格式',
