@@ -170,7 +170,7 @@ def contractDiff():
             with col4_[1]:
                 for _ in range(1):
                     st.write(" ")
-                st.markdown("**错误详情**", divider="red")
+                st.markdown("**错误详情**")
                 with st.form("错误详情"):
                     # 创建数据
                     col4_1_ = st.columns([1,4, 1])
