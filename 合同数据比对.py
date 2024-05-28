@@ -179,17 +179,18 @@ def contractDiff():
                     st.subheader("⚠️错误详情")
 
                     data = {
-                        '错误分类': ['不一致'],
+
                         '错误数据名称': ['额度金额'],
                         '原始数据': ['2000000.00'],
-                        '错误数据': ['3000000.00']
+                        '错误数据': ['3000000.00'],
+                        '错误分类': ['不一致'],
                     }
 
                     # 使用 pandas 创建 DataFrame
                     df = pd.DataFrame(data)
 
                     # 显示表格
-                    st.dataframe(df,use_container_width=True,hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+                    st.dataframe(df,use_container_width=True,hide_index=True,height=200)  # 或者使用 st.table(df) 显示静态表格
 
                     with st.container(height=700):
                         st.image("img/report.png")
