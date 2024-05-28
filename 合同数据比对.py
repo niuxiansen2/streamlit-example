@@ -168,25 +168,25 @@ def contractDiff():
                     st.write(" ")
                 st.button("下载报告", type='primary', use_container_width=True)
             with col4_[1]:
-                for _ in range(5):
+                for _ in range(4):
                     st.write(" ")
-                st.markdown("**错误详情**")
+
                 with st.container(height=500):
                     # 创建数据
-                    col4_1_ = st.columns([1,4, 1])
-                    with col4_1_[1]:
-                        data = {
-                            '错误分类': ['不一致'],
-                            '错误数据名称': ['额度金额'],
-                            '原始数据': ['2000000.00'],
-                            '错误数据': ['3000000.00']
-                        }
+                    st.markdown("####错误详情")
 
-                        # 使用 pandas 创建 DataFrame
-                        df = pd.DataFrame(data)
+                    data = {
+                        '错误分类': ['不一致'],
+                        '错误数据名称': ['额度金额'],
+                        '原始数据': ['2000000.00'],
+                        '错误数据': ['3000000.00']
+                    }
 
-                        # 显示表格
-                        st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+                    # 使用 pandas 创建 DataFrame
+                    df = pd.DataFrame(data)
+
+                    # 显示表格
+                    st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
 
                     with st.container(height=500):
                         st.image("img/report.png")
