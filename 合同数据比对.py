@@ -186,7 +186,7 @@ def contractDiff():
                     with st.container(height=500):
                         st.image("img/report.png")
 
-                    st.form_submit_button("保存结果",type='primary')
+                    st.form_submit_button("保存结果",type='primary',use_container_width=True)
 
     """导航栏"""
     with step_ph.container():
