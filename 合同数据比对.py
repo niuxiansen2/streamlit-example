@@ -168,7 +168,7 @@ def contractDiff():
             with col4_[1]:
                 for _ in range(1):
                     st.write(" ")
-                st.subheader("错误详情")
+                st.subheader("错误详情",divider="red")
                 with st.form("错误详情"):
                     # 创建数据
                     data = {
@@ -186,7 +186,8 @@ def contractDiff():
                     with st.container(height=500):
                         st.image("img/report.png")
 
-                    st.form_submit_button("保存结果",type='primary',use_container_width=True)
+                    st.form_submit_button("↗",disabled=True)
+                st.button("导出报告", type='primary', use_container_width=True)
 
     """导航栏"""
     with step_ph.container():
