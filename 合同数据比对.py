@@ -144,13 +144,13 @@ def contractDiff():
                         ], tag=[sac.Tag('通过', color='cyan')]),
 
                         sac.TreeItem('📂房抵经营_共借_电子调查报告', icon='', description='/Users/nwj/Desktop/房抵经营_共借_电子调查报告.pdf', children=[
-                            sac.TreeItem('item2-2-1', tag=sac.Tag('未通过', color='red', size='sm'), ),
-                            sac.TreeItem('item2-2-2', tag=sac.Tag('通过', color='cyan')),
-                            sac.TreeItem('item2-2-3', tag=sac.Tag('通过', color='cyan')),
-                            sac.TreeItem('item3-1', tag=sac.Tag('通过', color='cyan')),
-                            sac.TreeItem('item3-2', tag=sac.Tag('通过', color='cyan')),
-                            sac.TreeItem('item3-1', tag=sac.Tag('通过', color='cyan')),
-                            sac.TreeItem('item3-2', tag=sac.Tag('通过', color='cyan')),
+                            sac.TreeItem('产品名称', tag=sac.Tag('通过', color='red', size='sm'), ),
+                            sac.TreeItem('甲方姓名', tag=sac.Tag('通过', color='cyan')),
+                            sac.TreeItem('额度金额（元）', tag=sac.Tag('未通过', color='red')),
+                            sac.TreeItem('消费额度（元）', tag=sac.Tag('未通过', color='red')),
+                            sac.TreeItem('额度期限（月）', tag=sac.Tag('通过', color='cyan')),
+                            sac.TreeItem('经办机构', tag=sac.Tag('通过', color='cyan')),
+                            sac.TreeItem('共借人姓名', tag=sac.Tag('未通过', color='red')),
                         ]),
                         sac.TreeItem('📂抵经营_共借_批复文件', description='/Users/nwj/Desktop/房抵经营_共借_电子调查报告.pdf', children=[
                             sac.TreeItem('item2-2-1', tag=sac.Tag('未通过', color='red', size='sm'), ),
