@@ -173,7 +173,7 @@ def contractDiff():
 
                 with st.container(height=500):
                     # 创建数据
-                    st.markdown("####错误详情")
+                    st.markdown("**错误详情**")
 
                     data = {
                         '错误分类': ['不一致'],
@@ -186,9 +186,9 @@ def contractDiff():
                     df = pd.DataFrame(data)
 
                     # 显示表格
-                    st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+                    st.table(df)  # 或者使用 st.table(df) 显示静态表格
 
-                    with st.container(height=500):
+                    with st.container():
                         st.image("img/report.png")
 
 
