@@ -168,13 +168,13 @@ def contractDiff():
                     st.write(" ")
 
             with col4_[1]:
-                col4_1 = st.columns([3,1])
+                col4_1 = st.columns([4,1])
                 with col4_1[1]:
-                    st.button("⇲导出报告", type='primary', use_container_width=True)
+                    st.button("⇲     导出报告", type='primary', use_container_width=True)
                 for _ in range(1):
                     st.write(" ")
 
-                with st.container(height=500):
+                with st.container(height=900):
                     # 创建数据
                     st.subheader("⚠️错误详情")
 
