@@ -171,7 +171,7 @@ def contractDiff():
                 for _ in range(5):
                     st.write(" ")
                 st.markdown("**错误详情**")
-                with st.form("错误详情"):
+                with st.container(height=500):
                     # 创建数据
                     col4_1_ = st.columns([1,4, 1])
                     with col4_1_[1]:
@@ -191,7 +191,6 @@ def contractDiff():
                     with st.container(height=500):
                         st.image("img/report.png")
 
-                    st.form_submit_button("↗", disabled=True)
 
     """导航栏"""
     with step_ph.container():
