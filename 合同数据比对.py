@@ -191,7 +191,7 @@ def contractDiff():
                     # 显示表格
                     st.table(df)  # 或者使用 st.table(df) 显示静态表格
 
-                    with st.container(height=500):
+                    with st.container(height=700):
                         st.image("img/report.png")
 
 
