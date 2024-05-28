@@ -130,11 +130,11 @@ def contractDiff():
             col4_ = st.columns([3, 8])
 
             with col4_[0]:
-                with st.container(height=600):
+                with st.container():
                     st.subheader("结果列表", divider="red")
                     sac.tree(items=[
                         sac.TreeItem('📂抵押合同', description='/Users/nwj/Desktop/抵押合同.docx', children=[
-                            sac.TreeItem('甲方姓名', tag=sac.Tag('通过', color='cyan') ),
+                            sac.TreeItem('甲方姓名', tag=sac.Tag('通过', color='cyan')),
                             sac.TreeItem('乙方姓名', tag=sac.Tag('通过', color='cyan')),
                             sac.TreeItem('房产类别', tag=sac.Tag('通过', color='cyan')),
                             sac.TreeItem('还款账户一', tag=sac.Tag('通过', color='cyan')),
@@ -164,30 +164,34 @@ def contractDiff():
                                 sac.TreeItem('item3-2', tag=sac.Tag('通过', color='cyan')),
                             ]),
                     ], index=0, size='sm', open_all=True)
-
+                for _ in range(5):
+                    st.write(" ")
+                st.button("下载报告", type='primary', use_container_width=True)
             with col4_[1]:
                 for _ in range(1):
                     st.write(" ")
-                st.subheader("错误详情",divider="red")
+                st.markdown("**错误详情**", divider="red")
                 with st.form("错误详情"):
                     # 创建数据
-                    data = {
-                        '数据名称': ['额度金额'],
-                        '原始数据': ['2000000.00'],
-                        '错误数据': ['3000000.00']
-                    }
+                    col4_1_ = st.columns([1,4, 1])
+                    with col4_1_[1]:
+                        data = {
+                            '错误分类': ['不一致'],
+                            '错误数据名称': ['额度金额'],
+                            '原始数据': ['2000000.00'],
+                            '错误数据': ['3000000.00']
+                        }
 
-                    # 使用 pandas 创建 DataFrame
-                    df = pd.DataFrame(data)
+                        # 使用 pandas 创建 DataFrame
+                        df = pd.DataFrame(data)
 
-                    # 显示表格
-                    st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+                        # 显示表格
+                        st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
 
                     with st.container(height=500):
                         st.image("img/report.png")
 
-                    st.form_submit_button("↗",disabled=True)
-                st.button("导出报告", type='primary', use_container_width=True)
+                    st.form_submit_button("↗", disabled=True)
 
     """导航栏"""
     with step_ph.container():
