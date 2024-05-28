@@ -163,7 +163,7 @@ def contractDiff():
                                 sac.TreeItem('item3-1', tag=sac.Tag('通过', color='cyan')),
                                 sac.TreeItem('item3-2', tag=sac.Tag('通过', color='cyan')),
                             ]),
-                    ], index=0, size='lg', open_all=True)
+                    ], index=0, size='sm', open_all=True)
 
             with col4_[1]:
                 for _ in range(1):
