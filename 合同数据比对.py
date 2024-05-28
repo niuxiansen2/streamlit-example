@@ -164,25 +164,26 @@ def contractDiff():
                     ], index=0, size='lg', open_all=True)
 
             with col4_[1]:
-                for _ in range(3):
+                for _ in range(1):
                     st.write(" ")
                 st.subheader("错误详情")
                 with st.form("错误详情"):
-
-                    with st.container(height=500):
-                        st.image("img/report.png")
-
                     # 创建数据
                     data = {
-                        '原始数据': ['数据1'],
-                        '错误数据': ['错误1']
+                        '原始数据': ['2000000.00'],
+                        '错误数据': ['3000000.00']
                     }
 
                     # 使用 pandas 创建 DataFrame
                     df = pd.DataFrame(data)
 
                     # 显示表格
-                    st.dataframe(df,hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+                    st.dataframe(df, hide_index=True)  # 或者使用 st.table(df) 显示静态表格
+
+                    with st.container(height=500):
+                        st.image("img/report.png")
+
+
                     st.form_submit_button("保存结果")
 
 
