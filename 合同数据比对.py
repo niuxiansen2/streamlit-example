@@ -168,7 +168,7 @@ def contractDiff():
                     st.write(" ")
                 st.button("下载报告", type='primary', use_container_width=True)
             with col4_[1]:
-                for _ in range(1):
+                for _ in range(8):
                     st.write(" ")
                 st.markdown("**错误详情**")
                 with st.form("错误详情"):
