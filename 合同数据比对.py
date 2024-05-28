@@ -190,7 +190,7 @@ def contractDiff():
                     df = pd.DataFrame(data)
 
                     # 显示表格
-                    st.dataframe(df,use_container_width=True,hide_index=True,height=200)  # 或者使用 st.table(df) 显示静态表格
+                    st.dataframe(df,use_container_width=True,hide_index=True)  # 或者使用 st.table(df) 显示静态表格
 
                     with st.container(height=700):
                         st.image("img/report.png")
