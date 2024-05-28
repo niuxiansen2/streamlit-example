@@ -166,9 +166,12 @@ def contractDiff():
                     ], index=0, size='sm')
                 for _ in range(5):
                     st.write(" ")
-                st.button("下载报告", type='primary', use_container_width=True)
+
             with col4_[1]:
-                for _ in range(4):
+                col4_1 = st.columns([3,1])
+                with col4_1[1]:
+                    st.button("⇲导出报告", type='primary', use_container_width=True)
+                for _ in range(1):
                     st.write(" ")
 
                 with st.container(height=500):
