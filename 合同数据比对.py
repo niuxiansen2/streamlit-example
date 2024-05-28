@@ -130,7 +130,7 @@ def contractDiff():
             col4_ = st.columns([3, 8])
 
             with col4_[0]:
-                with st.container(height=900):
+                with st.container(height=600):
                     st.subheader("结果列表", divider="red")
                     sac.tree(items=[
                         sac.TreeItem('📂抵押合同', description='/Users/nwj/Desktop/抵押合同.docx', children=[
@@ -163,7 +163,7 @@ def contractDiff():
                                 sac.TreeItem('item3-1', tag=sac.Tag('通过', color='cyan')),
                                 sac.TreeItem('item3-2', tag=sac.Tag('通过', color='cyan')),
                             ]),
-                    ], index=0, size='sm', open_all=True,height=600)
+                    ], index=0, size='sm', open_all=True)
 
             with col4_[1]:
                 for _ in range(1):
